@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu, X, GraduationCap } from 'lucide-react';
+import { Menu, X, GraduationCap, Bell, FileText, LayoutDashboard } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -58,7 +58,10 @@ const NavLinks = ({ isMobile, onClick }: NavLinksProps) => {
   const links = [
     { name: "Home", path: "/" },
     { name: "Students", path: "/students" },
-    { name: "Schedule", path: "/schedule" }
+    { name: "Schedule", path: "/schedule" },
+    { name: "Articles", path: "/articles", icon: FileText },
+    { name: "Announcements", path: "/announcements", icon: Bell },
+    { name: "Admin", path: "/admin", icon: LayoutDashboard }
   ];
 
   return (
@@ -68,11 +71,12 @@ const NavLinks = ({ isMobile, onClick }: NavLinksProps) => {
           key={link.path} 
           to={link.path} 
           className={`
-            font-medium transition-colors hover:text-white
+            font-medium transition-colors hover:text-white flex items-center
             ${isMobile ? 'py-2' : ''}
           `}
           onClick={onClick}
         >
+          {link.icon && <link.icon className="mr-2 h-4 w-4" />}
           {link.name}
         </Link>
       ))}
