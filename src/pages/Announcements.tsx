@@ -37,7 +37,7 @@ const announcements = [
   },
   {
     id: "4",
-    title: "Job Fair (Segera)",
+    title: "Job Fair",
     content: "Pameran karir yang menampilkan perusahaan-perusahaan teknologi terkemuka akan diadakan di Sport Center Universitas Halu Oleo pada tanggal 25 Mei. Jangan lewatkan kesempatan untuk bertemu dengan perusahaan-perusahaan top dan mengeksplorasi peluang karir!",
     date: "2025-05-10",
     isImportant: true,
