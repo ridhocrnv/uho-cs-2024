@@ -6,30 +6,30 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: <Users className="h-10 w-10 text-accent" />,
-      title: "Student Directory",
-      description: "Complete database of all Computer Science students from the 2024 batch with contact information."
+      title: "Direktori Mahasiswa",
+      description: "Basis data lengkap seluruh mahasiswa Program Studi Ilmu Komputer Angkatan 2024, dilengkapi dengan informasi kontak."
     },
     {
       icon: <CalendarDays className="h-10 w-10 text-accent" />,
-      title: "Course Schedule",
-      description: "Up-to-date class schedules, assignment deadlines, and important academic dates."
+      title: "Jadwal Kuliah",
+      description: "Jadwal kuliah terkini, tenggat waktu tugas, dan tanggal-tanggal penting akademik."
     },
     {
       icon: <BookOpen className="h-10 w-10 text-accent" />,
-      title: "Academic Resources",
-      description: "Access to study materials, lecture notes, and other educational resources."
+      title: "Sumber Daya Akademik",
+      description: "Akses ke materi studi, catatan kuliah, dan sumber daya pendidikan lainnya."
     },
     {
       icon: <Megaphone className="h-10 w-10 text-accent" />,
-      title: "Announcements",
-      description: "Stay informed with the latest news, events, and important announcements."
+      title: "Pengumuman",
+      description: "Berita terbaru, acara, dan pengumuman penting."
     }
   ];
 
   return (
     <section className="py-16 bg-muted">
       <div className="container mx-auto px-4">
-        <h2 className="section-title text-center mb-12">What We Offer</h2>
+        <h2 className="section-title text-center mb-12">Apa yang Kami Tawarkan</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (

@@ -14,7 +14,7 @@ export interface CourseSchedule {
   startTime: string;
   endTime: string;
   courseName: string;
-  lecturer: string;
+  lecturer: string[];
   room: string;
 }
 
@@ -34,7 +34,7 @@ const ScheduleTable = ({ schedules }: ScheduleTableProps) => {
   });
   
   // Order of days
-  const dayOrder = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const dayOrder = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
   
   // Sort days
   const sortedDays = Object.keys(schedulesByDay).sort(
@@ -46,11 +46,11 @@ const ScheduleTable = ({ schedules }: ScheduleTableProps) => {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">Day</TableHead>
-            <TableHead className="w-[150px]">Time</TableHead>
-            <TableHead>Course</TableHead>
-            <TableHead>Lecturer</TableHead>
-            <TableHead>Room</TableHead>
+            <TableHead className="w-[100px]">Hari</TableHead>
+            <TableHead className="w-[150px]">Waktu</TableHead>
+            <TableHead>Mata Kuliah</TableHead>
+            <TableHead>Dosen</TableHead>
+            <TableHead>Ruangan</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>

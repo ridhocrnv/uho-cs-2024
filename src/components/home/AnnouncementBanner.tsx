@@ -17,21 +17,21 @@ type Announcement = {
 const sampleAnnouncements: Announcement[] = [
   {
     id: "1",
-    title: "Registration for Fall Semester",
-    content: "Registration for the fall semester is now open. Please complete your registration by August 15th.",
+    title: "Pendaftaran untuk Semester Gugur",
+    content: "Pendaftaran untuk semester gugur kini telah dibuka. Harap lengkapi pendaftaran Anda sebelum tanggal 15 Agustus.",
     date: "2025-07-20",
     isImportant: true,
   },
   {
     id: "2",
-    title: "Department Meeting",
-    content: "There will be a department meeting on June 5th at 2:00 PM in Room 302.",
+    title: "Rapat Program Studi",
+    content: "Akan diadakan rapat departemen pada tanggal 5 Juni pukul 14:00 di Ruang Program Studi Ilmu Komputer.",
     date: "2025-05-28",
   },
   {
     id: "3",
-    title: "New Library Resources",
-    content: "The university library has added new resources for computer science students.",
+    title: "Sumber Daya Perpustakaan Baru",
+    content: "Perpustakaan universitas telah menambahkan sumber daya baru untuk mahasiswa Ilmu Komputer. Jangan lewatkan kesempatan untuk memanfaatkan koleksi terbaru yang dapat mendukung proses belajar Anda.",
     date: "2025-05-15",
   }
 ];

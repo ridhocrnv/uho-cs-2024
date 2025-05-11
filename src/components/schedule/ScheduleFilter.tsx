@@ -17,7 +17,7 @@ const ScheduleFilter = ({ onFilterChange }: ScheduleFilterProps) => {
   
   return (
     <div className="bg-card p-4 rounded-lg shadow-sm mb-6 border">
-      <h3 className="text-lg font-medium mb-4">Filter Schedule</h3>
+      <h3 className="text-lg font-medium mb-4">Filter Jadwal</h3>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="space-y-2">

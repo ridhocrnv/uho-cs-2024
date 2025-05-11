@@ -84,22 +84,22 @@ const Articles = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
           <div>
-            <h1 className="text-3xl font-bold mb-2">Articles</h1>
+            <h1 className="text-3xl font-bold mb-2">Artikel</h1>
             <p className="text-muted-foreground">
-              Latest articles, news, and updates from our department
+              Artikel, Berita, dan Pembaruan Terbaru dari Program Studi Kami
             </p>
           </div>
           <div className="flex gap-2 flex-wrap">
-            <Button size="sm" variant="outline">Subscribe to updates</Button>
+            <Button size="sm" variant="outline">Berlangganan Pembaruan</Button>
           </div>
         </div>
         
         <Tabs defaultValue="all" className="mb-8">
           <TabsList>
-            <TabsTrigger value="all">All Articles</TabsTrigger>
-            <TabsTrigger value="technical">Technical</TabsTrigger>
-            <TabsTrigger value="department">Department</TabsTrigger>
-            <TabsTrigger value="students">Students</TabsTrigger>
+            <TabsTrigger value="all">Semua Artikel</TabsTrigger>
+            <TabsTrigger value="technical">Teknikal</TabsTrigger>
+            <TabsTrigger value="department">Program Studi</TabsTrigger>
+            <TabsTrigger value="students">Mahasiswa</TabsTrigger>
           </TabsList>
           <TabsContent value="all">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">

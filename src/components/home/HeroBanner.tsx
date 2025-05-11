@@ -9,8 +9,8 @@ const HeroBanner = () => {
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Computer Science UHO
-            <span className="block text-accent mt-2">Batch 2024</span>
+            Ilmu Komputer
+            <span className="block text-accent mt-2">Angkatan 2024</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-uho-text-light mb-8">
@@ -24,7 +24,7 @@ const HeroBanner = () => {
                 Meet Our Students
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-black hover:bg-white/10">
               <Link to="/schedule">
                 View Schedule
               </Link>

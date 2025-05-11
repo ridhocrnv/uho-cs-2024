@@ -1,10 +1,10 @@
 
 const StatsBanner = () => {
   const stats = [
-    { value: "60+", label: "Students" },
-    { value: "12", label: "Courses" },
-    { value: "6", label: "Projects" },
-    { value: "3", label: "Student Groups" }
+    { value: "80+", label: "Mahasiswa" },
+    { value: "9", label: "Mata Kuliah" },
+    { value: "6", label: "Proyek" },
+    { value: "2", label: "Kelas" }
   ];
 
   return (

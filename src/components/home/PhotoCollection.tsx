@@ -41,9 +41,9 @@ const PhotoCollection = () => {
   return (
     <section className="section bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="section-title mb-10">Our Photo Collection</h2>
+        <h2 className="section-title mb-10">Koleksi Foto Kami</h2>
         <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-10">
-          Memories from our journey through the Computer Science program at Halu Oleo University.
+          Kenangan dari perjalanan kami selama menempuh Program Studi Ilmu Komputer di Universitas Halu Oleo.
         </p>
         
         <div className="max-w-5xl mx-auto px-8">

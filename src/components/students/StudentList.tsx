@@ -8,11 +8,11 @@ import { Search } from "lucide-react";
 const sampleStudents: StudentData[] = [
   {
     id: "1",
-    name: "Andi Pratama",
-    nim: "F1A124001",
+    name: "Ridho Ahmad Irawan",
+    nim: "F1G124049",
     imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
-    email: "andi.pratama@student.uho.ac.id",
-    phone: "+62 812-3456-7890",
+    email: "ridhoahmadirawan281@gmail.com",
+    phone: "+62 813-3872-8015",
     address: "Kendari",
     class: "A"
   },
@@ -85,6 +85,26 @@ const sampleStudents: StudentData[] = [
     phone: "+62 819-0123-4567",
     address: "Kendari",
     class: "A"
+  },
+  {
+    id: "9",
+    name: "Agus Hidayat",
+    nim: "F1A124007",
+    imageUrl: "",
+    email: "agus.hidayat@student.uho.ac.id",
+    phone: "+62 818-9012-3456",
+    address: "Kendari",
+    class: "A"
+  },
+  {
+    id: "10",
+    name: "Maya Indah",
+    nim: "F1A124008",
+    imageUrl: "",
+    email: "maya.indah@student.uho.ac.id",
+    phone: "+62 819-0123-4567",
+    address: "Kendari",
+    class: "A"
   }
 ];
 
@@ -102,7 +122,7 @@ const StudentList = () => {
         <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" size={18} />
         <Input
           type="text"
-          placeholder="Search by name or NIM..."
+          placeholder="Cari berdasarkan nama atau NIM..."
           className="pl-10"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}

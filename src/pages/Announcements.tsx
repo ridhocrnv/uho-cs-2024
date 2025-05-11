@@ -11,39 +11,41 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Calendar } from "lucide-react";
 import { format } from "date-fns";
+import { id } from "date-fns/locale";
 
 // Sample announcement data for demonstration
 const announcements = [
   {
     id: "1",
-    title: "Registration for Fall Semester",
-    content: "Registration for the fall semester is now open. Please complete your registration by August 15th.",
+    title: "Pendaftaran untuk Semester Gugur",
+    content: "Pendaftaran untuk semester gugur kini telah dibuka. Harap lengkapi pendaftaran Anda sebelum tanggal 15 Agustus.",
     date: "2025-07-20",
     isImportant: true,
   },
   {
     id: "2",
-    title: "Department Meeting",
-    content: "There will be a department meeting on June 5th at 2:00 PM in Room 302.",
+    title: "Rapat Program Studi",
+    content: "Akan diadakan rapat departemen pada tanggal 5 Juni pukul 14:00 di Ruang Program Studi Ilmu Komputer.",
     date: "2025-05-28",
+    isImportant: false,
   },
   {
     id: "3",
-    title: "New Library Resources",
-    content: "The university library has added new resources for computer science students.",
+    title: "Sumber Daya Perpustakaan Baru",
+    content: "Perpustakaan universitas telah menambahkan sumber daya baru untuk mahasiswa Ilmu Komputer. Jangan lewatkan kesempatan untuk memanfaatkan koleksi terbaru yang dapat mendukung proses belajar Anda.",
     date: "2025-05-15",
   },
   {
     id: "4",
-    title: "Upcoming Career Fair",
-    content: "A career fair featuring top tech companies will be held at the University Center on May 25th.",
+    title: "Job Fair (Segera)",
+    content: "Pameran karir yang menampilkan perusahaan-perusahaan teknologi terkemuka akan diadakan di Sport Center Universitas Halu Oleo pada tanggal 25 Mei. Jangan lewatkan kesempatan untuk bertemu dengan perusahaan-perusahaan top dan mengeksplorasi peluang karir!",
     date: "2025-05-10",
     isImportant: true,
   },
   {
     id: "5",
-    title: "Research Presentation",
-    content: "Dr. Wayan Suparta will be presenting his latest research on artificial intelligence on May 8th.",
+    title: "Presentasi Riset",
+    content: "Dr. Wayan Suparta akan mempresentasikan riset terbarunya tentang kecerdasan buatan pada tanggal 8 Mei. Jangan lewatkan kesempatan untuk mendapatkan wawasan baru dari penelitian terkini di bidang ini.",
     date: "2025-05-01",
   }
 ];
@@ -53,25 +55,25 @@ const Announcements = () => {
     <PageLayout>
       <div className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2">Announcements</h1>
+          <h1 className="text-3xl font-bold mb-2">Pengumuman</h1>
           <p className="text-muted-foreground">
-            Latest announcements and updates from our department
+            Pembaruan dan pengumuman terkini dari program studi kami. Dapatkan informasi penting mengenai kegiatan, acara, dan perubahan terbaru.
           </p>
         </div>
         
         <div className="bg-card rounded-lg shadow p-4 md:p-6">
           <div className="flex items-center gap-2 mb-4">
             <Calendar className="h-5 w-5 text-primary" />
-            <h2 className="font-semibold text-lg">Recent Announcements</h2>
+            <h2 className="font-semibold text-lg">Pengumuman Terbaru</h2>
           </div>
           
           <div className="overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-[100px]">Date</TableHead>
-                  <TableHead>Title</TableHead>
-                  <TableHead className="hidden md:table-cell">Details</TableHead>
+                  <TableHead className="w-[100px]">Tanggal</TableHead>
+                  <TableHead>Judul</TableHead>
+                  <TableHead className="hidden md:table-cell">Detail</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -80,12 +82,12 @@ const Announcements = () => {
                   return (
                     <TableRow key={announcement.id}>
                       <TableCell className="font-medium">
-                        {format(date, "MMM d, yyyy")}
+                        {format(date, "d MMMM yyyy", { locale: id})}
                       </TableCell>
                       <TableCell>
                         <div className="font-medium">
                           {announcement.isImportant && (
-                            <Badge variant="destructive" className="mr-2">Important</Badge>
+                            <Badge variant="destructive" className="mr-2">Penting</Badge>
                           )}
                           {announcement.title}
                         </div>

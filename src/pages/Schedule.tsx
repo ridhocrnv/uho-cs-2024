@@ -16,7 +16,7 @@ const Schedule = () => {
       startTime: "08:00",
       endTime: "09:40",
       courseName: "Calculus I",
-      lecturer: "Dr. Ahmad",
+      lecturer: ["Dr. Ahmad"],
       room: "Room 101"
     },
     {
@@ -25,7 +25,7 @@ const Schedule = () => {
       startTime: "10:00",
       endTime: "11:40",
       courseName: "Introduction to Programming",
-      lecturer: "Prof. Budi",
+      lecturer: ["Prof. Budi"],
       room: "Lab CS-1"
     },
     {
@@ -34,7 +34,7 @@ const Schedule = () => {
       startTime: "08:00",
       endTime: "09:40",
       courseName: "Basic Electronics",
-      lecturer: "Dr. Cantika",
+      lecturer: ["Dr. Cantika"],
       room: "Room 203"
     },
     {
@@ -43,7 +43,7 @@ const Schedule = () => {
       startTime: "13:00",
       endTime: "14:40",
       courseName: "English for Academic Purposes",
-      lecturer: "Mrs. Diana",
+      lecturer: ["Mrs. Diana"],
       room: "Room 105"
     },
     {
@@ -52,7 +52,7 @@ const Schedule = () => {
       startTime: "10:00",
       endTime: "11:40",
       courseName: "Introduction to Computer Science",
-      lecturer: "Prof. Eko",
+      lecturer: ["Prof. Eko"],
       room: "Auditorium"
     },
     {
@@ -61,7 +61,7 @@ const Schedule = () => {
       startTime: "08:00",
       endTime: "09:40",
       courseName: "Discrete Mathematics",
-      lecturer: "Dr. Fathia",
+      lecturer: ["Dr. Fathia"],
       room: "Room 202"
     }
   ];
@@ -69,21 +69,84 @@ const Schedule = () => {
   const semester2Schedules: CourseSchedule[] = [
     {
       id: "7",
-      day: "Monday",
+      day: "Senin",
       startTime: "08:00",
-      endTime: "09:40",
-      courseName: "Data Structures",
-      lecturer: "Dr. Gina",
-      room: "Lab CS-2"
+      endTime: "10:00",
+      courseName: "Struktur Data",
+      lecturer: ["Dr. Andi Tenriawaru, S.Si., M.Si"],
+      room: "F1.1.03 - FMIPA Gedung B Lt.1"
     },
     {
       id: "8",
-      day: "Tuesday",
+      day: "Senin",
+      startTime: "13:15",
+      endTime: "14:15",
+      courseName: "Praktikum Kimia",
+      lecturer: ["Asisten Dosen"],
+      room: "Lab Terpadu"
+    },
+    {
+      id: "9",
+      day: "Senin",
+      startTime: "15:30",
+      endTime: "16:40",
+      courseName: "Kewarganegaraan",
+      lecturer: ["Rahman, S. Pd., M. Hum., & Muh. Idrus, M.Pd"],
+      room: "F1.1.03 - FMIPA Gedung B Lt.1"
+    },
+    {
+      id: "10",
+      day: "Selasa",
+      startTime: "07:30",
+      endTime: "09:30",
+      courseName: "Logika Matematika",
+      lecturer: ["Gusti Arviana Rahman, S.Si, M,Si, & Dr. Andi Tenriawaru, S.Si., M.Si"],
+      room: "F1.1.03 - FMIPA Gedung B Lt.1"
+    },
+    {
+      id: "11",
+      day: "Selasa",
+      startTime: "10.00",
+      endTime: "12.30",
+      courseName: "Statistika",
+      lecturer: ["Ferdinand Murni Hamundu ST, MSc., Ph.D. & Gusti Arviana Rahman, S.Si, M,Si"],
+      room: "F1.1.03 - FMIPA Gedung B Lt.1"
+    },
+    {
+      id: "12",
+      day: "Rabu",
+      startTime: "08:00",
+      endTime: "09:40",
+      courseName: "Kewirausahaan",
+      lecturer: ["Drs. Laode Saidi, M.Kom."],
+      room: "F1.1.03 - FMIPA Gedung B Lt.1"
+    },
+    {
+      id: "13",
+      day: "Rabu",
+      startTime: "10:00",
+      endTime: "12:30",
+      courseName: "Kalkulus II",
+      lecturer: ["Drs. Laode Saidi, M.Kom. & Drs. Herdi Budiman, M.Si."],
+      room: "F1.1.03 - FMIPA Gedung B Lt.1"
+    },
+    {
+      id: "14",
+      day: "Kamis",
+      startTime: "08:00",
+      endTime: "09:40",
+      courseName: "Kimia Dasar",
+      lecturer: ["La Ode Kadidae, S.Si., M.Si., Ph.D. & Dr. Nohong, M.Si."],
+      room: "F1.1.03 - FMIPA Gedung B Lt.1"
+    },
+    {
+      id: "15",
+      day: "Kamis",
       startTime: "13:00",
-      endTime: "14:40",
-      courseName: "Linear Algebra",
-      lecturer: "Prof. Hadi",
-      room: "Room 201"
+      endTime: "15:30",
+      courseName: "Biologi Dasar",
+      lecturer: ["Asisten Dosen"],
+      room: "FMIPA Gedung A Lt.3"
     }
   ];
   
@@ -106,10 +169,9 @@ const Schedule = () => {
     <PageLayout>
       <div className="page-container">
         <div className="mb-10 text-center">
-          <h1 className="text-3xl font-bold mb-4">Course Schedule</h1>
+          <h1 className="text-3xl font-bold mb-4">Jadwal Kuliah</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Current course schedule for Computer Science Batch 2024. 
-            You can filter by semester to see specific schedules.
+            Jadwal mata kuliah saat ini untuk Ilmu Komputer angkatan 2024. Anda dapat memfilter berdasarkan semester untuk melihat jadwal tertentu.
           </p>
         </div>
         
@@ -126,7 +188,7 @@ const Schedule = () => {
             <ScheduleTable schedules={getAllSchedules()} />
             
             <div className="mt-4 text-sm text-muted-foreground">
-              <p>Last updated: May 1, 2024</p>
+              <p>Terakhir Update: 11 Mei, 2025</p>
               <p>Note: Schedule is subject to change. Please check regularly for updates.</p>
             </div>
           </TabsContent>

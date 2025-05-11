@@ -3,8 +3,10 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, GraduationCap, Bell, FileText, LayoutDashboard } from 'lucide-react';
+import logo from '@/assets/ilkom24uho.webp';
 
-const Navbar = () => {
+
+function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -16,15 +18,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
-            <GraduationCap size={28} />
-            <span className="font-bold text-lg md:text-xl">CS UHO 2024</span>
+            <img src={logo} alt="Logo" className="h-8 w-8 object-contain" />
+            <span className="font-bold text-lg md:text-xl">TECH CREW</span>
           </Link>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button 
-              variant="ghost" 
-              size="icon" 
+            <Button
+              variant="ghost"
+              size="icon"
               onClick={toggleMobileMenu}
               className="text-uho-text-light hover:bg-uho-light"
             >
@@ -47,7 +49,7 @@ const Navbar = () => {
       )}
     </nav>
   );
-};
+}
 
 interface NavLinksProps {
   isMobile: boolean;
@@ -56,11 +58,11 @@ interface NavLinksProps {
 
 const NavLinks = ({ isMobile, onClick }: NavLinksProps) => {
   const links = [
-    { name: "Home", path: "/" },
-    { name: "Students", path: "/students" },
-    { name: "Schedule", path: "/schedule" },
-    { name: "Articles", path: "/articles", icon: FileText },
-    { name: "Announcements", path: "/announcements", icon: Bell },
+    { name: "Beranda", path: "/" },
+    { name: "Mahasiswa", path: "/students" },
+    { name: "Jadwal Kuliah", path: "/schedule" },
+    { name: "Artikel", path: "/articles", icon: FileText },
+    { name: "Pengumuman", path: "/announcements", icon: Bell },
     { name: "Admin", path: "/admin", icon: LayoutDashboard }
   ];
 
