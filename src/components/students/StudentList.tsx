@@ -10,7 +10,7 @@ const sampleStudents: StudentData[] = [
     id: "049",
     name: "Ridho Ahmad Irawan",
     nim: "F1G124049",
-    imageUrl: "public/img049.webp",
+    imageUrl: "/img049.webp",
     email: "ridhoahmadirawan281@gmail.com",
     phone: "+62 813-3872-8015",
     address: "Kendari",
