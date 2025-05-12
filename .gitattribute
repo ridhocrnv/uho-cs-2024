@@ -1,0 +1,6 @@
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.svg linguist-detectable=false
