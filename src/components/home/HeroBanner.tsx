@@ -44,14 +44,14 @@ const HeroBanner = () => {
           {/* Baris 1: Ilmu Komputer */}
           <TypewriterText
             text="Ilmu Komputer"
-            className="text-white text-4xl md:text-5xl lg:text-6xl font-bold"
+            className="text-white text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
           />
 
           {/* Baris 2: Angkatan 2024 (accent) */}
           <TypewriterText
             text="Angkatan 2024"
             delayOffset={1.2}
-            className="text-accent text-4xl md:text-5xl lg:text-6xl font-bold mt-2"
+            className="text-accent text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mt-2"
           />
 
           <motion.p
