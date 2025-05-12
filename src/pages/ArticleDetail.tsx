@@ -9,114 +9,182 @@ import { Link } from "react-router-dom";
 const articles = [
   {
     id: "1",
-    title: "Introduction to Machine Learning with Python",
+    title: "Pengenalan Machine Learning dengan Python",
     excerpt: "Learn the fundamentals of machine learning using Python and popular libraries like scikit-learn.",
     content: `
-      <p>Machine learning is a field of artificial intelligence that focuses on developing systems that learn from data. Python has become the go-to language for machine learning due to its simplicity and the extensive ecosystem of libraries available.</p>
-      
-      <h2>Popular Machine Learning Libraries in Python</h2>
+      <p>Machine Learning (pembelajaran mesin) adalah bidang dari kecerdasan buatan (AI) yang berfokus pada pengembangan sistem yang dapat belajar dari data. Python telah menjadi bahasa utama dalam bidang ini karena kesederhanaannya dan ekosistem pustaka (library) yang sangat luas.</p>
+      <br />
+      <h2>Libraries Machine Learning Populer di Python</h2>
+      <br />
       <ul>
-        <li><strong>scikit-learn</strong>: A versatile library that provides a range of supervised and unsupervised learning algorithms.</li>
-        <li><strong>TensorFlow</strong>: An open-source platform for machine learning developed by Google.</li>
-        <li><strong>PyTorch</strong>: A machine learning library developed by Facebook's AI Research lab.</li>
-        <li><strong>Keras</strong>: A high-level neural networks API that runs on top of TensorFlow.</li>
+        <li><strong>scikit-learn</strong>: Pustaka serbaguna yang menyediakan berbagai algoritma pembelajaran terawasi (supervised) dan tak terawasi (unsupervised).</li>
+        <li><strong>TensorFlow</strong>: Platform sumber terbuka untuk machine learning yang dikembangkan oleh Google.</li>
+        <li><strong>PyTorch</strong>: Pustaka machine learning yang dikembangkan oleh laboratorium riset AI milik Facebook.</li>
+        <li><strong>Keras</strong>: API jaringan saraf tingkat tinggi yang berjalan di atas TensorFlow.</li>
       </ul>
+
+      <br />
       
-      <h2>Getting Started with Machine Learning</h2>
-      <p>To begin your journey in machine learning with Python, you should have a good understanding of basic Python syntax and data structures. Familiarity with libraries like NumPy and Pandas will also be beneficial.</p>
-      
-      <p>Here's a simple example of a machine learning model using scikit-learn:</p>
-      
+      <h2>Memulai Machine Learning</h2>
+
+      <br />
+      <p>Untuk memulai perjalanan Anda dalam machine learning dengan Python, sebaiknya Anda memiliki pemahaman yang baik tentang sintaks dasar Python dan struktur data. Mengenal pustaka seperti NumPy dan Pandas juga akan sangat membantu.</p>
+      <br />
+      <strong>
+      <p>Contoh Sederhana Model Machine Learning Menggunakan scikit-learn</p>
+      </strong>
+
       <pre><code>
       from sklearn.datasets import load_iris
       from sklearn.model_selection import train_test_split
       from sklearn.ensemble import RandomForestClassifier
-      
-      # Load a sample dataset
+
+      # Memuat dataset contoh
       iris = load_iris()
       X, y = iris.data, iris.target
-      
-      # Split the data into training and testing sets
+
+      # Membagi data menjadi data latih dan data uji
       X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-      
-      # Train a Random Forest Classifier
+
+      # Melatih model Random Forest Classifier
       clf = RandomForestClassifier(n_estimators=100)
       clf.fit(X_train, y_train)
-      
-      # Make predictions
+
+      # Membuat prediksi
       y_pred = clf.predict(X_test)
-      
-      # Evaluate the model
+
+      # Mengevaluasi model
       accuracy = (y_pred == y_test).sum() / len(y_test)
-      print(f"Accuracy: {accuracy:.2f}")
+      print(f"Akurasi: {accuracy:.2f}")
+
       </code></pre>
       
-      <p>This is just a simple example. As you progress, you'll learn about more complex models, feature engineering, hyperparameter tuning, and more.</p>
+      <p>Ini hanyalah contoh sederhana. Seiring dengan kemajuan pembelajaran Anda, Anda akan mempelajari model yang lebih kompleks, rekayasa fitur (feature engineering), penyetelan parameter (hyperparameter tuning), dan banyak lagi.</p>
     `,
     author: "Dr. Wayan Suparta",
-    date: "May 10, 2025",
+    date: "10 Mei, 2025",
     readTime: "8 min read",
     category: "technical",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
   },
   {
     id: "2",
-    title: "Computer Science Department Achievements 2025",
-    excerpt: "A summary of the achievements and milestones reached by our department in the past year.",
+    title: "Pencapaian Program Studi Ilmu Komputer 2025",
+    excerpt: "Ringkasan pencapaian dan tonggak keberhasilan yang telah diraih oleh program studi kami selama setahun terakhir.",
     content: `
-      <p>The year 2025 has been remarkable for the Computer Science Department at Halu Oleo University. We have achieved significant milestones and made substantial progress in various areas.</p>
+      <p>Tahun 2025 telah menjadi tahun yang luar biasa bagi Program Studi Ilmu Komputer di Universitas Halu Oleo. Kami telah mencapai berbagai tonggak penting dan membuat kemajuan substansial di berbagai bidang.</p>
       
-      <h2>Academic Achievements</h2>
-      <p>Our faculty members have published over 50 research papers in prestigious international journals and conferences. Dr. Liza Safitri received the 'Outstanding Researcher' award from the Association of Indonesian Computer Scientists.</p>
+      <br />
+
+      <h2>Pencapaian Akademik</h2>
       
-      <h2>Student Accomplishments</h2>
-      <p>Our students have excelled in national and international competitions. The team led by Aditya Pratama won the first prize in the Southeast Asian Programming Contest. Additionally, three of our students received scholarships for postgraduate studies at universities in the United States and Europe.</p>
+      <br />
+
+      <p>Alumni program studi kami telah mempublikasikan lebih dari 50 makalah penelitian di jurnal dan konferensi internasional terkemuka. Dr. Liza Safitri menerima penghargaan "Peneliti Unggul" dari Asosiasi Ilmuwan Komputer Indonesia.</p>
       
-      <h2>Industry Collaborations</h2>
-      <p>We have established new partnerships with leading tech companies, which have opened up internship and job opportunities for our students. These collaborations have also enhanced our curriculum with practical, industry-relevant content.</p>
+      <br />
+
+      <h2>Pencapaian Mahasiswa</h2>
       
-      <h2>Infrastructure Development</h2>
-      <p>The department's computing facilities have been upgraded with the latest hardware and software, providing students with a cutting-edge learning environment.</p>
+      <br />
+
+      <p>Mahasiswa kami telah unggul dalam kompetisi tingkat nasional dan internasional. Tim yang dipimpin oleh Aditya Pratama meraih juara pertama di Kontes Pemrograman Asia Tenggara. Selain itu, tiga mahasiswa kami mendapatkan beasiswa untuk melanjutkan studi pascasarjana di universitas-universitas di Amerika Serikat dan Eropa.</p>
       
-      <h2>Future Goals</h2>
-      <p>Looking ahead, we aim to further strengthen our research output, enhance international collaborations, and continue to provide high-quality education that prepares our students for the evolving tech landscape.</p>
+      <br />
+
+      <h2>Kolaborasi Industri</h2>
+      
+      <br />
+
+      <p>Kami telah menjalin kemitraan baru dengan perusahaan-perusahaan teknologi terkemuka, yang membuka peluang magang dan pekerjaan bagi mahasiswa kami. Kolaborasi ini juga memperkaya kurikulum kami dengan materi praktis yang relevan dengan industri.</p>
+      
+      <br/>
+
+      <h2>Pengembangan Infrastruktur</h2>
+
+      <br />
+
+      <p>Fasilitas komputasi departemen telah ditingkatkan dengan perangkat keras dan perangkat lunak terbaru, menyediakan lingkungan pembelajaran yang mutakhir bagi mahasiswa.</p>
+      
+      <br />
+
+      <h2>Tujuan Masa Depan</h2>
+      
+      <br />
+      
+      <p>Melihat ke depan, kami bertujuan untuk lebih memperkuat hasil penelitian kami, meningkatkan kolaborasi internasional, dan terus menyediakan pendidikan berkualitas tinggi yang mempersiapkan mahasiswa kami untuk menghadapi perkembangan pesat dunia teknologi.</p>
     `,
     author: "Prof. Dr. Natalis Ransi",
-    date: "April 28, 2025",
+    date: "28 April, 2025",
     readTime: "5 min read",
-    category: "department"
+    category: "department",
+    imageUrl: "https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "3",
-    title: "Student Projects Showcase",
-    excerpt: "Highlights from the recent student projects exhibition featuring innovative solutions.",
+    title: "Pameran Proyek Mahasiswa",
+    excerpt: "Sorotan dari pameran proyek mahasiswa terbaru yang menampilkan solusi-solusi inovatif.",
     content: `
-      <p>Our annual Student Projects Showcase was a resounding success, featuring innovative solutions developed by our talented students across various domains of computer science.</p>
+      <p>Pameran Proyek Mahasiswa tahunan kami tahun ini sukses besar, menampilkan berbagai solusi inovatif yang dikembangkan oleh mahasiswa-mahasiswa berbakat di berbagai bidang ilmu komputer. Berikut adalah beberapa proyek yang paling menonjol:</p>
       
-      <h2>Notable Projects</h2>
+      <br />
+
+      <h2>Proyek Terkenal</h2>
+
+      <br />
       
-      <h3>1. Intelligent Traffic Management System</h3>
-      <p>Developed by a team of final-year students, this system uses computer vision and machine learning to optimize traffic flow in urban areas. The prototype demonstrated a 25% reduction in traffic congestion during peak hours.</p>
+      <h3>1. Sistem Manajemen Lalu Lintas Cerdas</h3>
+
+      <br />
+
+      <p>Dikembangkan oleh tim mahasiswa tingkat akhir, sistem ini menggunakan visi komputer dan pembelajaran mesin untuk mengoptimalkan arus lalu lintas di kawasan perkotaan. Prototipe ini menunjukkan pengurangan 25% dalam kemacetan lalu lintas pada jam sibuk.</p>
       
-      <h3>2. Healthcare Monitoring App</h3>
-      <p>This mobile application, designed for elderly care, continuously monitors vital signs and alerts caregivers in case of anomalies. The project won the 'Best Healthcare Solution' award at the regional hackathon.</p>
+      <br />
+
+      <h3>2. Aplikasi Pemantauan Kesehatan</h3>
+
+      <br />
+
+      <p>Aplikasi mobile ini dirancang untuk perawatan lansia, yang terus memantau tanda-tanda vital dan memberi peringatan kepada pengasuh jika ada kelainan. Proyek ini memenangkan penghargaan 'Solusi Kesehatan Terbaik' di hackathon regional.</p>
       
-      <h3>3. Sustainable Energy Dashboard</h3>
-      <p>A web-based dashboard that helps users visualize and optimize their energy consumption patterns. The system integrates with smart home devices to provide real-time insights and recommendations.</p>
+      <br />
+
+      <h3>3. Dasbor Energi Berkelanjutan</h3>
+
+      <br />
+
+      <pDasbor berbasis web yang membantu pengguna memvisualisasikan dan mengoptimalkan pola konsumsi energi mereka. Sistem ini terintegrasi dengan perangkat rumah pintar untuk memberikan wawasan dan rekomendasi secara real-time.</p>
       
-      <h3>4. Automated Essay Grading System</h3>
-      <p>Using natural language processing techniques, this system assists educators in grading essays more efficiently while providing detailed feedback to students.</p>
+      <br />
+
+      <h3>4. Sistem Penilaian Esai Otomatis</h3>
+
+      <br />
+
+      <p>Menggunakan teknik pemrosesan bahasa alami, sistem ini membantu pendidik dalam menilai esai secara lebih efisien sambil memberikan umpan balik yang detail kepada siswa.</p>
       
-      <h2>Industry Reception</h2>
-      <p>The showcase attracted representatives from several tech companies, with two projects receiving funding for further development. Many students also secured internship opportunities based on their project work.</p>
+      <br />
+
+      <h2>Penerimaan Industri</h2>
+
+      <br />
+
+      <p>Pameran ini menarik perhatian perwakilan dari berbagai perusahaan teknologi, dengan dua proyek yang menerima pendanaan untuk pengembangan lebih lanjut. Banyak mahasiswa juga memperoleh kesempatan magang berdasarkan pekerjaan proyek mereka.</p>
       
-      <h2>Future Directions</h2>
-      <p>The success of this year's showcase has inspired plans to expand the event next year, including categories for junior students and collaborative projects with other departments.</p>
+      <br />
       
-      <p>We are incredibly proud of our students' creativity, technical skills, and dedication to solving real-world problems through technology.</p>
+      <h2>Arah Masa Depan</h2>
+
+      <br />
+
+      <p>Keberhasilan pameran tahun ini menginspirasi rencana untuk memperluas acara ini tahun depan, termasuk kategori untuk mahasiswa junior dan proyek kolaboratif dengan departemen lain.</p>
+      
+      <br />
+
+      <p>Kami sangat bangga dengan kreativitas, keterampilan teknis, dan dedikasi mahasiswa kami dalam memecahkan masalah dunia nyata melalui teknologi.</p>
     `,
     author: "Liza Safitri, M.Sc.",
-    date: "April 15, 2025",
+    date: "15 April, 2025",
     readTime: "6 min read",
     category: "students",
     imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
@@ -131,9 +199,9 @@ const ArticleDetail = () => {
     return (
       <PageLayout>
         <div className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-2xl font-bold mb-4">Article not found</h1>
+          <h1 className="text-2xl font-bold mb-4">Artikel tidak ditemukan</h1>
           <Button asChild>
-            <Link to="/articles">Back to Articles</Link>
+            <Link to="/articles">Kembali ke Artikel</Link>
           </Button>
         </div>
       </PageLayout>
@@ -146,7 +214,7 @@ const ArticleDetail = () => {
         <div className="mb-6">
           <Button variant="ghost" asChild className="mb-4">
             <Link to="/articles" className="flex items-center">
-              <ArrowLeft className="mr-2 h-4 w-4" /> Back to Articles
+              <ArrowLeft className="mr-2 h-4 w-4" /> Kembali ke Artikel
             </Link>
           </Button>
           
@@ -183,17 +251,38 @@ const ArticleDetail = () => {
           />
           
           <div className="mt-10 pt-6 border-t">
-            <h3 className="text-lg font-semibold mb-4">Share this article</h3>
+            <h3 className="text-lg font-semibold mb-4">Bagikan artikel ini</h3>
             <div className="flex gap-2">
-              <Button variant="outline" size="sm">
+              <a 
+                href={`https://web.facebook.com/?_rdc=1&_rdr#`}
+                target="_blank"
+                rel="noopener noreferrer"  
+              >
+                
+                <Button variant="outline" size="sm">
                 Facebook
-              </Button>
-              <Button variant="outline" size="sm">
-                Twitter
-              </Button>
-              <Button variant="outline" size="sm">
+                </Button>
+              </a>
+
+              <a
+                href={`https://x.com/`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="sm">
+                X
+                </Button>
+              </a>
+
+              <a 
+                href={`https://id.linkedin.com/`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="sm">
                 LinkedIn
-              </Button>
+                </Button>
+              </a>
             </div>
           </div>
         </div>

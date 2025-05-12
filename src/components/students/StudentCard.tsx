@@ -23,7 +23,7 @@ const StudentCard = ({ student }: StudentCardProps) => {
     <Card className="card-hover overflow-hidden">
       <div className="aspect-square overflow-hidden bg-muted">
         <img 
-          src={student.imageUrl || "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"}
+          src={student.imageUrl}
           alt={student.name}
           className="w-full h-full object-cover"
         />

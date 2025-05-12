@@ -7,10 +7,10 @@ import { Search } from "lucide-react";
 // Sample student data 
 const sampleStudents: StudentData[] = [
   {
-    id: "1",
+    id: "049",
     name: "Ridho Ahmad Irawan",
     nim: "F1G124049",
-    imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    imageUrl: "public/img049.webp",
     email: "ridhoahmadirawan281@gmail.com",
     phone: "+62 813-3872-8015",
     address: "Kendari",

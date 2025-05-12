@@ -18,12 +18,59 @@
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://ilkom24uho.vercel.app/og-image-ilkom24uho.png" />
 
+    <!-- Add Facebook SDK -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : 'YOUR_APP_ID',  // Gantilah dengan App ID yang kamu dapatkan
+          xfbml      : true,
+          version    : 'v15.0'
+        });
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- Facebook Share Button -->
+    <div id="facebook-share-button">
+      <button onclick="shareToFacebook()" hidden>Share on Facebook</button>
+    </div>
+
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Add Facebook Share function -->
+    <script>
+      function shareToFacebook() {
+        if (window.FB) {
+          window.FB.ui(
+            {
+              method: 'share',
+              href: window.location.href, // URL yang ingin dibagikan
+            },
+            function(response) {
+              if (response && !response.error_message) {
+                console.log('Posting completed.');
+              } else {
+                console.log('Error while posting.');
+              }
+            }
+          );
+        }
+      }
+    </script>
+
   </body>
 </html>

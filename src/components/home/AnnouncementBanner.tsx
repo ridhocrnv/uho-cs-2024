@@ -66,7 +66,7 @@ const AnnouncementBanner = () => {
               <p className="font-medium truncate">
                 {announcement.isImportant && (
                   <span className="bg-destructive text-destructive-foreground text-xs px-1.5 py-0.5 rounded mr-2">
-                    Important
+                    Penting
                   </span>
                 )}
                 {announcement.title}

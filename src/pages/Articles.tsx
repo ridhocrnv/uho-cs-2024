@@ -10,32 +10,33 @@ import { Link } from "react-router-dom";
 const articles = [
   {
     id: "1",
-    title: "Introduction to Machine Learning with Python",
-    excerpt: "Learn the fundamentals of machine learning using Python and popular libraries like scikit-learn.",
+    title: "Pengenalan Machine Learning dengan Python",
+    excerpt: "Pelajari dasar-dasar machine learning menggunakan Python dan pustaka populer seperti scikit-learn",
     content: "Full content here...",
     author: "Dr. Wayan Suparta",
-    date: "May 10, 2025",
+    date: "10 Mei, 2025",
     readTime: "8 min read",
     category: "technical",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
   },
   {
     id: "2",
-    title: "Computer Science Department Achievements 2025",
-    excerpt: "A summary of the achievements and milestones reached by our department in the past year.",
+    title: "Pencapaian Program Studi Ilmu Komputer 2025",
+    excerpt: "Ringkasan pencapaian dan tonggak keberhasilan yang telah diraih oleh program studi kami selama setahun terakhir.",
     content: "Full content here...",
     author: "Prof. Dr. Natalis Ransi",
-    date: "April 28, 2025",
+    date: "28 April, 2025",
     readTime: "5 min read",
-    category: "department"
+    category: "department",
+    imageUrl: "https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "3",
-    title: "Student Projects Showcase",
-    excerpt: "Highlights from the recent student projects exhibition featuring innovative solutions.",
+    title: "Pameran Proyek Mahasiswa",
+    excerpt: "Sorotan dari pameran proyek mahasiswa terbaru yang menampilkan solusi-solusi inovatif.",
     content: "Full content here...",
     author: "Liza Safitri, M.Sc.",
-    date: "April 15, 2025",
+    date: "15 April, 2025",
     readTime: "6 min read",
     category: "students",
     imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
@@ -82,25 +83,27 @@ const Articles = () => {
   return (
     <PageLayout>
       <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 gap-4 grid grid-cols-1 sm:grind-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
           <div>
             <h1 className="text-3xl font-bold mb-2">Artikel</h1>
             <p className="text-muted-foreground">
               Artikel, Berita, dan Pembaruan Terbaru dari Program Studi Kami
             </p>
           </div>
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex gap-2 flex-wrap md:justify-end">
             <Button size="sm" variant="outline">Berlangganan Pembaruan</Button>
           </div>
         </div>
         
         <Tabs defaultValue="all" className="mb-8">
-          <TabsList>
+          <div className="w-full overflox-x-auto">
+            <TabsList className="inline-flex gap-2 px-2 py-1 bg-muted rounded-md w-max min-w-fit">
             <TabsTrigger value="all">Semua Artikel</TabsTrigger>
             <TabsTrigger value="technical">Teknikal</TabsTrigger>
             <TabsTrigger value="department">Program Studi</TabsTrigger>
             <TabsTrigger value="students">Mahasiswa</TabsTrigger>
           </TabsList>
+          </div>
           <TabsContent value="all">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
               {articles.map((article) => (

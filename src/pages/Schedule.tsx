@@ -189,13 +189,13 @@ const Schedule = () => {
             
             <div className="mt-4 text-sm text-muted-foreground">
               <p>Terakhir Update: 11 Mei, 2025</p>
-              <p>Note: Schedule is subject to change. Please check regularly for updates.</p>
+              <p>Catatan: Jadwal dapat berubah sewaktu-waktu. Silakan periksa secara berkala untuk pembaruan.</p>
             </div>
           </TabsContent>
           
           <TabsContent value="calendar">
             <div className="text-center py-10">
-              <p>Calendar view coming soon!</p>
+              <p>Fitur tampilan kalender akan segera tersedia!</p>
             </div>
           </TabsContent>
         </Tabs>
