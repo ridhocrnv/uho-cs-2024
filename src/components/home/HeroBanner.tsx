@@ -40,18 +40,18 @@ const HeroBanner = () => {
 
       <div className="container mx-auto px-4 py-20 md:py-32 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          
+
           {/* Baris 1: Ilmu Komputer */}
           <TypewriterText
             text="Ilmu Komputer"
-            className="text-white text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
+            className="text-white text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter"
           />
 
           {/* Baris 2: Angkatan 2024 (accent) */}
           <TypewriterText
             text="Angkatan 2024"
             delayOffset={1.2}
-            className="text-accent text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mt-2"
+            className="text-accent text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mt-2"
           />
 
           <motion.p
