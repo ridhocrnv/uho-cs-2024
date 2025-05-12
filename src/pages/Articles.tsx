@@ -9,12 +9,23 @@ import { Link } from "react-router-dom";
 // Sample article data for demonstration
 const articles = [
   {
+    id: "4",
+    title: "Tiga Calon Rektor UHO Resmi Ditetapkan Senat",
+    excerpt: "Universitas Halu Oleo (UHO) Kendari menetapkan tiga calon rektor untuk masa jabatan 2025–2029 melalui rapat senat pada 8 Mei 2025",
+    content: "Full content here...",
+    author: "Media Informasi",
+    date: "08 Mei, 2025",
+    readTime: "10 min read",
+    category: "department",
+    imageUrl: "/tiga-balon-rektor-scaled.jpeg"
+  },
+  {
     id: "1",
     title: "Pengenalan Machine Learning dengan Python",
     excerpt: "Pelajari dasar-dasar machine learning menggunakan Python dan pustaka populer seperti scikit-learn",
     content: "Full content here...",
     author: "Dr. Wayan Suparta",
-    date: "10 Mei, 2025",
+    date: "3 Mei, 2025",
     readTime: "8 min read",
     category: "technical",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"

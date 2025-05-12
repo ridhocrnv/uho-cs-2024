@@ -63,7 +63,7 @@ const articles = [
     `,
     author: "Dr. Wayan Suparta",
     date: "10 Mei, 2025",
-    readTime: "8 min read",
+    readTime: "3 min read",
     category: "technical",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
   },
@@ -188,6 +188,99 @@ const articles = [
     readTime: "6 min read",
     category: "students",
     imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+  },
+  {
+    id: "4",
+    title: "Tiga Calon Rektor UHO Periode 2025–2029 Ditetapkan",
+    excerpt: "Sorotan dari pameran proyek mahasiswa terbaru yang menampilkan solusi-solusi inovatif.",
+    content: `
+      <article>
+    <header>
+      <h1>Tiga Calon Rektor UHO Periode 2025–2029 Ditetapkan</h1>
+      <br />
+      <p><em>Kendari, Pusat Media UHO – 8 Mei 2025</em></p>
+    </header>
+
+    <br />
+
+    <section>
+      <p>Dalam rangkaian proses pemilihan pimpinan Universitas Halu Oleo (UHO), Senat Universitas menyelenggarakan Rapat Senat Tertutup pada Kamis, 8 Mei 2025, untuk melakukan tahap penyaringan bakal calon Rektor periode 2025–2029. Sidang tersebut dipimpin oleh Ketua Senat, Prof. Dr. Jamili, M.Si., dan dihadiri oleh 49 anggota senat yang seluruhnya memberikan suara mereka.</p>
+
+      <br />
+
+      <p>Dari enam bakal calon yang telah mendaftarkan diri, tiga nama berhasil memperoleh suara terbanyak dan dinyatakan lolos ke tahap berikutnya. Mereka adalah:</p>
+      
+      <br />
+
+      <ul>
+        <li><strong>1. Prof. Armid, S.Si., M.Si., M.Sc., D.Sc.</strong> (Calon Nomor 1)</li>
+        <li><strong>2. Prof. Dr. Ruslin, S.Pd., M.Si.</strong> (Calon Nomor 4)</li>
+        <li><strong>3. Prof. Dr. Ir. Takdir Saili, M.Si.</strong> (Calon Nomor 5)</li>
+      </ul>
+
+      <br />
+
+      <p>Ketiga nama ini selanjutnya akan diajukan kepada Menteri Pendidikan Tinggi, Sains, dan Teknologi untuk proses pemilihan tahap akhir.</p>
+    </section>
+
+    <br />
+    <section>
+      <h2>Pemaparan Visi, Misi, dan Program Kerja</h2>
+      
+      <br />
+
+      <p>Sebelum penyaringan, para bakal calon rektor telah memaparkan visi, misi, serta program kerja mereka dalam Rapat Senat Khusus yang dilaksanakan di hari yang sama. Berikut adalah ringkasan visi dan misi dari masing-masing calon:</p>
+
+      <br />
+
+      <h3>Prof. Armid, S.Si., M.Si., M.Sc., D.Sc.</h3>
+      <br />
+      <p><strong>Visi:</strong> Mewujudkan UHO sebagai kampus berdampak yang maju dan berkarakter global untuk mendukung Indonesia Emas.</p>
+      <br />
+      <p><strong>Misi:</strong></p>
+      <ul>
+        <li>1. Menyelenggarakan pendidikan berkualitas bertaraf internasional yang berbasis IPTEKS.</li>
+        <li>2. Mengembangkan riset dan inovasi yang relevan bagi kebutuhan lokal hingga global.</li>
+        <li>3. Menguatkan jejaring kerjasama dengan dunia akademik dan industri nasional maupun internasional.</li>
+        <li>4. Menghasilkan SDM unggul dengan karakter global.</li>
+        <li>5. Membangun tata kelola kampus yang modern dan akuntabel.</li>
+        <li>6. Mengembangkan infrastruktur dan atmosfer akademik yang berkelanjutan dan berakar pada kearifan lokal.</li>
+      </ul>
+      <br />
+      <h3>Prof. Dr. Ruslin, S.Pd., M.Si.</h3>
+      <br />
+      <p><strong>Visi:</strong> Menghasilkan karya transformatif demi peningkatan daya saing global.</p>
+      <br />
+      <p><strong>Misi:</strong></p>
+      <ul>
+        <li>1. Mewujudkan sistem pendidikan yang kokoh dan efektif.</li>
+        <li>2. Memperkuat penelitian inovatif yang kolaboratif.</li>
+        <li>3. Memberikan kontribusi nyata bagi pembangunan nasional melalui hasil riset.</li>
+        <li>4. Mengelola sumber daya universitas secara optimal.</li>
+        <li>5. Meningkatkan pendapatan dan tata kelola keuangan yang transparan dan berkelanjutan.</li>
+        <li>6. Menciptakan lingkungan kampus yang kondusif dan mendukung atmosfer akademik unggul.</li>
+      </ul>
+      <br />
+      <h3>Prof. Dr. Ir. Takdir Saili, M.Si.</h3>
+      <br/>
+      <p><strong>Visi:</strong> Menjadikan UHO sebagai pusat unggulan pendidikan, riset, dan inovasi berbasis kearifan lokal untuk pembangunan berkelanjutan dan daya saing global.</p>
+      <br />
+      <p><strong>Misi:</strong></p>
+      <ul>
+        <li>1. Meningkatkan mutu pendidikan dengan lingkungan belajar inklusif dan pemanfaatan teknologi modern.</li>
+        <li>2. Memperkuat riset dan inovasi berbasis kearifan lokal melalui jejaring nasional dan global.</li>
+        <li>3. Membina karakter dan kompetensi lulusan agar siap bersaing dengan softskill dan hardskill.</li>
+        <li>4. Mewujudkan tata kelola yang transparan, efisien, dan berorientasi keberlanjutan.</li>
+        <li>5. Melaksanakan pengabdian yang berdampak nyata dan memberdayakan masyarakat lokal.</li>
+      </ul>
+    </section>
+  </article>
+    `,
+    author: "Media Informasi",
+    date: "8 Mei, 2025",
+    readTime: "10 min read",
+    category: "department",
+    imageUrl: "/tiga-balon-rektor-scaled.jpeg"
   }
 ];
 
