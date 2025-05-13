@@ -55,7 +55,7 @@ npm run dev
 Kami terbuka untuk kontribusi dari siapa pun yang ingin membantu pengembangan website angkatan ini.
 
 Langkah kontribusi:
-
+```
 1. Fork repository ini
 
 2. Buat branch baru: git checkout -b fitur-xyz
@@ -65,6 +65,7 @@ Langkah kontribusi:
 4. Buat Pull Request ke branch main
 
 5. Sertakan deskripsi singkat tentang perubahanmu
+```
 
 ## 🙌 Terima kasih telah berkontribusi!
 
