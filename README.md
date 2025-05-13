@@ -38,6 +38,7 @@ npm run dev
 ```
 
 ## 📁 Struktur Folder
+```
 .
 ├── public/         # File publik (favicon, dsb)
 ├── src/
@@ -48,6 +49,7 @@ npm run dev
 ├── index.html
 ├── package.json
 └── tsconfig.json
+```
 
 ## 🤝 Panduan Kontribusi
 Kami terbuka untuk kontribusi dari siapa pun yang ingin membantu pengembangan website angkatan ini.
