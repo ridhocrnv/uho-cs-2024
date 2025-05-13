@@ -1,7 +1,7 @@
 <h1 align="center">🎓 UHO CS 2024 — Website Angkatan</h1>
 
 <p align="center">
-  Website resmi Angkatan <strong>Ilmu Komputer 2024</strong><br />
+  Website Angkatan <strong>Ilmu Komputer 2024</strong><br />
   Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Halu Oleo
 </p>
 
