@@ -1,73 +1,70 @@
-# Welcome to your Lovable project
+<h1 align="center">🎓 UHO CS 2024 — Website Angkatan</h1>
 
-## Project info
+<p align="center">
+  Website resmi Angkatan <strong>Ilmu Komputer 2024</strong><br />
+  Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Halu Oleo
+</p>
 
-**URL**: https://lovable.dev/projects/3bb9bcf8-81af-4824-8338-51effe6fcd37
+<p align="center">
+  <a href="https://ilkom24uho.vercel.app" target="_blank">🌐 Lihat Website</a>
+</p>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📦 Teknologi yang Digunakan
 
-**Use Lovable**
+- ⚡ Vite – Build tool modern
+- ⚛️ React – Library UI
+- 🧩 shadcn/ui – Komponen UI modular
+- 💅 Tailwind CSS – Utility-first styling
+- 🛠️ TypeScript – Superset JavaScript dengan type safety
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3bb9bcf8-81af-4824-8338-51effe6fcd37) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Cara Menjalankan Proyek
 
-**Use your preferred IDE**
+```bash
+# Clone repositori ini
+git clone https://github.com/ridhocrnv/uho-cs-2024.git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Masuk ke folder proyek
+cd uho-cs-2024
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Install dependency
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Jalankan di mode development
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 📁 Struktur Folder
+.
+├── public/         # File publik (favicon, dsb)
+├── src/
+│   ├── components/ # Komponen UI
+│   ├── pages/      # Halaman utama
+│   ├── styles/     # Styling tambahan
+│   └── main.tsx    # Entry point React
+├── index.html
+├── package.json
+└── tsconfig.json
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🤝 Panduan Kontribusi
+Kami terbuka untuk kontribusi dari siapa pun yang ingin membantu pengembangan website angkatan ini.
 
-**Use GitHub Codespaces**
+Langkah kontribusi:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Fork repository ini
 
-## What technologies are used for this project?
+2. Buat branch baru: git checkout -b fitur-xyz
 
-This project is built with:
+3. Commit dan push perubahanmu
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. Buat Pull Request ke branch main
 
-## How can I deploy this project?
+5. Sertakan deskripsi singkat tentang perubahanmu
 
-Simply open [Lovable](https://lovable.dev/projects/3bb9bcf8-81af-4824-8338-51effe6fcd37) and click on Share -> Publish.
+## 🙌 Terima kasih telah berkontribusi!
 
-## Can I connect a custom domain to my Lovable project?
+Website ini dibuat untuk memperkuat koneksi, komunikasi, dan kolaborasi sesama mahasiswa Ilmu Komputer Angkatan 2024 💙
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
