@@ -107,12 +107,13 @@ const Articles = () => {
         </div>
         
         <Tabs defaultValue="all" className="mb-8">
-          <div className="w-full overflox-x-auto">
-            <TabsList className="inline-flex gap-2 px-2 py-1 bg-muted rounded-md w-max min-w-fit">
+          <div className="w-full overflow-hidden overflow-scroll">
+            <TabsList className="inline-block gap-2 px-2 py-1 bg-muted rounded-md w-max min-w-fit scroll-hidden">
             <TabsTrigger value="all">Semua Artikel</TabsTrigger>
             <TabsTrigger value="technical">Teknikal</TabsTrigger>
             <TabsTrigger value="department">Program Studi</TabsTrigger>
             <TabsTrigger value="students">Mahasiswa</TabsTrigger>
+            <TabsTrigger value="sports">Olahraga</TabsTrigger>
           </TabsList>
           </div>
           <TabsContent value="all">
