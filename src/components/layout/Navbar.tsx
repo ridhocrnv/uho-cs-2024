@@ -63,7 +63,6 @@ const NavLinks = ({ isMobile, onClick }: NavLinksProps) => {
     { name: "Jadwal Kuliah", path: "/schedule" },
     { name: "Artikel", path: "/articles", icon: FileText },
     { name: "Pengumuman", path: "/announcements", icon: Bell },
-    { name: "Admin", path: "/admin", icon: LayoutDashboard }
   ];
 
   return (
